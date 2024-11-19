@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.jpeg">
+    <link rel="stylesheet" href="registro.css">
+    <title>Registro</title>
+</head>
+<body>
+  <div class="title"><h1>Sign In Form</h1></div>
+  <div class="container">
+      <div class="left"></div>
+      <div class="right">
+          <div class="formBox">
+              <form action="datos/registro.php" method="post" onsubmit="return validarFormulario()">
+                  <p>Nombre</p>
+                  <input type="text" id="nombre" name="txtNombre" placeholder="Nombre">
+                  <span id="nombreError" style="color: red; display: none; font-size: 12px;">Por favor, ingresa tu nombre</span>
+              
+                  <p>Apellidos</p>
+                  <input type="text" id="apellidos" name="txtApellidos" placeholder="Apellidos">
+                  <span id="apellidosError" style="color: red; display: none; font-size: 12px;">Por favor, ingresa tus apellidos</span>
+              
+                  <p>Nombre Usuario</p>
+                  <input type="text" id="usuario" name="txtUsuario" placeholder="Usuario">
+                  <span id="usuarioError" style="color: red; display: none; font-size: 12px;">Por favor, ingresa un nombre de usuario</span>
+              
+                  <p>Correo Electrónico</p>
+                  <input type="email" id="email" name="txtEmail" placeholder="Email">
+                  <span id="emailError" style="color: red; display: none; font-size: 12px;">Por favor, ingresa tu correo electrónico</span>
+              
+                  <p>Fecha de Nacimiento</p>
+                  <input type="date" id="fecha" name="txtFecha">
+                  <span id="fechaError" style="color: red; display: none; font-size: 12px;">Por favor, ingresa tu fecha de nacimiento</span>
+              
+                  <p>Password</p>
+                  <input type="password" id="password" name="txtPassword" placeholder="Contraseña">
+                  <span id="passwordError" style="color: red; display: none; font-size: 12px;">Por favor, ingresa una contraseña</span>
+                  <br>
+
+                  <input type="checkbox" id="chk" onclick="togglePasswordVisibility()">Ver contraseña
+                  <br>
+                  <br>
+                  <input type="submit" name="button" value="Registrar">
+                  <a href="index.html">Volver</a>
+              
+              </form>
+              
+          </div>
+      </div>
+  </div>
+
+<script src="funciones/camposRegistro.js"></script>
+<script src="funciones/ver-contraseñaRegistro.js"></script>
+</body>
+</html>
