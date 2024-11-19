@@ -1,6 +1,7 @@
 <?php
 
     if($_POST) {
+ 
         $conexion = mysqli_connect('localhost', 'root', '', 'refugio', 3306);
 
         $Nombre = $_POST['txtNombre'];
@@ -11,7 +12,7 @@
         $Contraseña = $_POST['txtPassword'];
 
         $Consulta = "insert into registro (nombre, apellidos, nombreusuario, correo, fecha, contrasena) values ('$Nombre', '$Apellidos', '$NombreUsuary', '$Correo', '$FechaNacimiento', '$Contraseña');"; 
-        
+
 
         $resultado = mysqli_query($conexion, $Consulta);
         if ($resultado) {
@@ -25,5 +26,5 @@
         }
         mysqli_close($conexion);
     }
-
+    
 ?>
