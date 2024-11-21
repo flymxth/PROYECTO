@@ -53,6 +53,21 @@ body {
     text-align: center;
 }
 
+.btn1 {
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 700;
+}
+
+.btn1:hover {
+    background-color: #c5c2c2;
+    color: #000;
+    transition: all 0.5s;
+}
+
 @media (max-width: 768px) {
     .parte-oscura1 h1 {
         text-align: center;
@@ -60,8 +75,13 @@ body {
     }
 
     .parte-oscura1 p {
-        max-width: 90%;
+        max-width: 100%;
         text-align: center;
+    }
+
+    .btn1 {
+        text-align: center;
+        width: 100%;
     }
 }
 
@@ -98,10 +118,57 @@ body {
     border-radius: 20px;
     padding-left: 15px;
     padding-right: 15px;
+    font-weight: 700;
 }
 
 .btn2:hover {
     background-color: #c5c2c2;
     color: #000;
+    transition: all 0.5s;
 }
   
+@media (max-width: 768px) {
+    .parte-oscura2 h1 {
+        text-align: center;
+        width: 90%;
+    }
+
+    .parte-oscura2 p {
+        text-align: center;
+        width: 100%;
+    }
+
+    .btn2 {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+  .card {
+    max-width: 350px;
+    margin: 10px auto;
+  }
+
+  .card-img-top {
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+
+  .imagen {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .imagen:hover {
+    transform: translateY(-20px);
+  }
+
+  @media (max-width: 768px) {
+    .imagen {
+        text-align: center;
+        width: 20px;
+    }
+  }
