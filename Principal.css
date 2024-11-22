@@ -221,8 +221,9 @@ body {
   
 footer {
     text-align: center;
-    min-height: 500px;
+    min-height: 300px;
     background-color: #1a1a1a;
+    padding: 10px;
 }
 
 .footer-logo {
