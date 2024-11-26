@@ -1,9 +1,6 @@
 <?php
 // Conexión a la base de datos
 $conexion = mysqli_connect('localhost', 'root', '', 'refugio', 3306);
-if (!$conexion) {
-    die("Error de conexión: " . mysqli_connect_error());
-}
 
 // Obtener todos los registros
 $consulta = "SELECT * FROM aportaciones";
