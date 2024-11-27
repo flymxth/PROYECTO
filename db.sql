@@ -33,16 +33,16 @@ CREATE TABLE aportaciones (
 );
 
 DROP TABLE citas;
+
 CREATE TABLE citas (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(100) NOT NULL,
-    apellidos VARCHAR(100) NOT NULL,
-    telefono VARCHAR(15) NOT NULL,
-    sexo ENUM('Macho', 'Hembra') NOT NULL,
-    nombre_mascota VARCHAR(100) NOT NULL,
-    Raza VARCHAR(40) NOT NULL,
-    Edad VARCHAR (50) NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+	id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    nombre VARCHAR (30) NOT NULL,
+    apellidos VARCHAR (50) NOT NULL,
+    telefono VARCHAR (25) NOT NULL,
+    nombremascota VARCHAR (30) NOT NULL,
+    sexo VARCHAR (40) NOT NULL,
+    raza VARCHAR (40) NOT NULL,
+    edad VARCHAR (35) NOT NULL
 );
 
 
