@@ -45,6 +45,14 @@ CREATE TABLE citas (
     edad VARCHAR (35) NOT NULL
 );
 
+CREATE TABLE Eventos (
+    id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    nombrecompleto VARCHAR (70) NOT NULL,
+    telefono VARCHAR (25) NOT NULL,
+    informacion VARCHAR (500),
+    fecha DATE NOT NULL
+);
+
 
 SELECT * FROM citas;
 
